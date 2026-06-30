@@ -1,4 +1,5 @@
 from student import Student
+from database import get_all_students, add_student
 import json
 def is_roll_exists(roll_no):
     for student in students:
@@ -179,7 +180,7 @@ def load_students():
         return []
             
 
-students=load_students()
+students=get_all_students()
     
 while True:
     print("\n>>>>>>>STUDENT MANAGEMENT SYSTEM<<<<<<<<")

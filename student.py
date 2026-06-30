@@ -52,3 +52,12 @@ class Student:
         self.dept = new_dept
     def update_mark(self,new_mark):
         self.mark = new_mark
+
+    @classmethod
+    def from_row(cls,row):
+        return cls(
+            row[1],
+            row[2],
+            row[3],
+            row[4]
+        )

@@ -1,2 +1,4 @@
 __pycache__/
 *.pyc
+students.json
+student_management_copy.py
